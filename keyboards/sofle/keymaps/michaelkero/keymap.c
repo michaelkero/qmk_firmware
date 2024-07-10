@@ -2,7 +2,7 @@
 
 #define LO_ESC LT(_LOWER, KC_ESC)
 #define RA_BSP LT(_RAISE, KC_BSPC)
-#define CTL_GRV LCTL_T(KC_GRV)
+#define CTL_Z LCTL_T(KC_Z)
 #define SFT_SPC LSFT_T(KC_SPC)
 #define CTL_ENT LCTL_T(KC_ENT)
 
@@ -31,17 +31,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT(
     _______,_______,_______,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
     _______,KC_Q   ,KC_W   ,KC_E   ,KC_R   ,KC_T   ,                KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,_______,
-    CTL_GRV,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,                KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_QUOT,
-    _______,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,KC_MUTE,_______,KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,_______,
+    _______,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,                KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,_______,
+    _______,CTL_Z  ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,KC_MUTE,_______,KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,_______,
                     _______,_______,KC_LGUI,LO_ESC ,SFT_SPC,CTL_ENT,RA_BSP ,KC_LALT,_______,_______
 ),
 
 [_LOWER] = LAYOUT(
-    _______,_______,_______,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
-    _______,_______,_______,KC_CIRC,KC_PAST,KC_PPLS,                KC_HASH,KC_LCBR,KC_RCBR,_______,_______,_______,
-    _______,KC_PIPE,KC_AMPR,KC_EXLM,KC_EQL ,KC_UNDS,                KC_DLR ,KC_LPRN,KC_RPRN,KC_LABK,KC_RABK,_______,
-    _______,KC_BSLS,_______,KC_PERC,KC_SLSH,KC_MINS,_______,_______,KC_AT  ,KC_LBRC,KC_RBRC,_______,_______,_______,
-                    _______,_______,_______,_______,_______,_______,KC_DEL ,_______,_______,_______
+    _______,_______ ,_______,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
+    _______,KC_GRAVE,KC_TILD,KC_CIRC,KC_PAST,KC_PPLS,                KC_HASH,KC_LCBR,KC_RCBR,KC_LABK,KC_RABK,_______,
+    _______,KC_PIPE ,KC_AMPR,KC_EXLM,KC_EQL ,KC_UNDS,                KC_DLR ,KC_LPRN,KC_RPRN,KC_QUOT,KC_DQT ,_______,
+    _______,KC_BSLS ,_______,KC_PERC,KC_SLSH,KC_MINS,_______,_______,KC_AT  ,KC_LBRC,KC_RBRC,_______,_______,_______,
+                     _______,_______,_______,_______,_______,_______,KC_DEL ,_______,_______,_______
 ),
 
 [_RAISE] = LAYOUT(
@@ -53,11 +53,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_ADJUST] = LAYOUT( 
-    _______,_______,_______ ,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
-    _______,KC_F1  ,KC_F2  ,KC_F3   ,KC_F4  ,KC_F5  ,                KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,_______,
-    _______,_______,_______ ,_______,_______,KC_CAPS,                KC_PSCR,_______,_______,_______,KC_F11 ,_______,
-    _______,RGB_TOG,RGB_RMOD,RGB_MOD,RGB_VAD,RGB_VAI,AU_ON  ,AU_OFF ,RGB_HUD,RGB_HUI,RGB_SAD,RGB_SAI,KC_F12 ,_______,
-                    _______ ,_______,_______,_______,_______,_______,_______,_______,_______,_______
+    _______,_______,_______,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
+    _______,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,                KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,_______,
+    _______,_______,_______,_______,_______,KC_CAPS,                KC_PSCR,_______,_______,_______,KC_F11 ,_______,
+    _______,_______,_______,_______,_______,_______,AU_ON  ,AU_OFF ,_______,_______,_______,_______,KC_F12 ,_______,
+                    _______,_______,_______,_______,_______,_______,_______,_______,_______,_______
 )
 };
 
