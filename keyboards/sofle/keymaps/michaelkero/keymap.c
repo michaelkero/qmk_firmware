@@ -54,9 +54,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_ADJUST] = LAYOUT( 
     _______,_______,_______ ,_______,_______,_______,                _______,_______,_______,_______,_______,_______,
-    KC_F1  ,KC_F2  ,KC_F3   ,KC_F4  ,KC_F5  ,KC_F6  ,                KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,
-    _______,_______,_______ ,_______,_______,KC_CAPS,                KC_PSCR,_______,_______,_______,_______,_______,
-    _______,RGB_TOG,RGB_RMOD,RGB_MOD,RGB_VAD,RGB_VAI,AU_ON  ,AU_OFF ,RGB_HUD,RGB_HUI,RGB_SAD,RGB_SAI,_______,_______,
+    _______,KC_F1  ,KC_F2  ,KC_F3   ,KC_F4  ,KC_F5  ,                KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,_______,
+    _______,_______,_______ ,_______,_______,KC_CAPS,                KC_PSCR,_______,_______,_______,KC_F11 ,_______,
+    _______,RGB_TOG,RGB_RMOD,RGB_MOD,RGB_VAD,RGB_VAI,AU_ON  ,AU_OFF ,RGB_HUD,RGB_HUI,RGB_SAD,RGB_SAI,KC_F12 ,_______,
                     _______ ,_______,_______,_______,_______,_______,_______,_______,_______,_______
 )
 };
