@@ -69,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // └─────────────────────────────────────────────────┘ 
 
 // #define RGB_DI_PIN D3 -----> og line that caused compile errrrrssss
-#define WS2812_DI_Pin D3
+#define ws2812_DI_Pin D3
 #define RGBLED_NUM 42
 #define RGBLED_SPLIT { 21, 21 }
 #define RGB_MATRIX_LED_COUNT RGBLED_NUM
